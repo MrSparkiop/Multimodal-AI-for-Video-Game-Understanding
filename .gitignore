@@ -1,0 +1,60 @@
+# --- Python ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Jupyter -----------------------------------------------------------------
+.ipynb_checkpoints/
+
+# --- Data --------------------------------------------------------------------
+# The raw Steam dump (~190 MB), the downloaded screenshots and the derived
+# feature caches are reproducible artefacts and are NOT committed.
+# See data/README.md for how to regenerate them.
+data/raw/*
+!data/raw/.gitkeep
+data/images/*
+!data/images/.gitkeep
+data/processed/features/
+data/processed/*.csv
+data/processed/*.json
+data/splits/*.csv
+
+# --- Model checkpoints -------------------------------------------------------
+# The three headline checkpoints ARE committed (~4.5 MB total) so that
+#     pip install -r requirements.txt && streamlit run app/streamlit_app.py
+# works from a fresh clone without downloading the dataset or retraining.
+# They are small because a fully frozen pretrained encoder is reproducible from
+# its published weights and is therefore excluded from the checkpoint file.
+# Extra seeds and ablation runs are reproducible artefacts and stay ignored.
+models/*
+!models/.gitkeep
+!models/image_model.pt
+!models/text_model.pt
+!models/multimodal_model.pt
+
+# --- Results -----------------------------------------------------------------
+# Metrics/figures ARE committed (they are the reported experimental results);
+# only bulky raw prediction dumps are ignored.
+results/predictions/*.npz
+
+# --- OS / editor -------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
