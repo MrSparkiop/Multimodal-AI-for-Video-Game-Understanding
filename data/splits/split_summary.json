@@ -1,0 +1,112 @@
+{
+  "seed": 42,
+  "proportions": [
+    0.7,
+    0.15,
+    0.15
+  ],
+  "classes": [
+    "Action",
+    "Adventure",
+    "Casual",
+    "RPG",
+    "Racing",
+    "Simulation",
+    "Sports",
+    "Strategy"
+  ],
+  "n_games_total": 7972,
+  "n_samples_total": 15683,
+  "screenshots_per_game": 2,
+  "splits": {
+    "train": {
+      "n_games": 5558,
+      "n_samples": 10934,
+      "game_fraction": 0.6972,
+      "genre_counts": {
+        "Action": 2540,
+        "Adventure": 2282,
+        "Casual": 2570,
+        "RPG": 1132,
+        "Racing": 474,
+        "Simulation": 1487,
+        "Sports": 496,
+        "Strategy": 1336
+      },
+      "genre_prevalence": {
+        "Action": 0.457,
+        "Adventure": 0.4106,
+        "Casual": 0.4624,
+        "RPG": 0.2037,
+        "Racing": 0.0853,
+        "Simulation": 0.2675,
+        "Sports": 0.0892,
+        "Strategy": 0.2404
+      },
+      "labels_per_game_mean": 2.216
+    },
+    "val": {
+      "n_games": 1214,
+      "n_samples": 2384,
+      "game_fraction": 0.1523,
+      "genre_counts": {
+        "Action": 544,
+        "Adventure": 489,
+        "Casual": 551,
+        "RPG": 243,
+        "Racing": 101,
+        "Simulation": 319,
+        "Sports": 106,
+        "Strategy": 287
+      },
+      "genre_prevalence": {
+        "Action": 0.4481,
+        "Adventure": 0.4028,
+        "Casual": 0.4539,
+        "RPG": 0.2002,
+        "Racing": 0.0832,
+        "Simulation": 0.2628,
+        "Sports": 0.0873,
+        "Strategy": 0.2364
+      },
+      "labels_per_game_mean": 2.175
+    },
+    "test": {
+      "n_games": 1200,
+      "n_samples": 2365,
+      "game_fraction": 0.1505,
+      "genre_counts": {
+        "Action": 545,
+        "Adventure": 489,
+        "Casual": 551,
+        "RPG": 243,
+        "Racing": 102,
+        "Simulation": 318,
+        "Sports": 106,
+        "Strategy": 286
+      },
+      "genre_prevalence": {
+        "Action": 0.4542,
+        "Adventure": 0.4075,
+        "Casual": 0.4592,
+        "RPG": 0.2025,
+        "Racing": 0.085,
+        "Simulation": 0.265,
+        "Sports": 0.0883,
+        "Strategy": 0.2383
+      },
+      "labels_per_game_mean": 2.2
+    }
+  },
+  "leakage_check": {
+    "ok": true,
+    "group_column": "app_id",
+    "n_groups": {
+      "train": 5558,
+      "val": 1214,
+      "test": 1200
+    },
+    "group_overlaps": {},
+    "sample_id_overlaps": {}
+  }
+}
