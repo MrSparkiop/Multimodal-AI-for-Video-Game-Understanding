@@ -1,0 +1,198 @@
+{
+  "epochs": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "train_loss": [
+    0.5428867871649781,
+    0.43553411141473647,
+    0.35339252241173685,
+    0.28289169961946053,
+    0.20816102846149812,
+    0.14234946419795355,
+    0.09045423005233731,
+    0.06010693640649667
+  ],
+  "val_loss": [
+    0.4931820607499072,
+    0.4616674780845642,
+    0.4750976201735045,
+    0.5295582029380297,
+    0.6133019751624057,
+    0.7289403967167202,
+    0.8447698299822054,
+    0.9520779408906636
+  ],
+  "train_micro_f1": [
+    0.327056544896971,
+    0.5742194981804252,
+    0.6940560629064787,
+    0.7721136144472692,
+    0.8465742268704057,
+    0.9036523796446905,
+    0.9451051000753705,
+    0.9663000916437557
+  ],
+  "val_micro_f1": [
+    0.44205378973105136,
+    0.5607035607035608,
+    0.5905136702568351,
+    0.5859120521172638,
+    0.5729643639259406,
+    0.5742535487028879,
+    0.5668438471567546,
+    0.5678500986193293
+  ],
+  "train_macro_f1": [
+    0.21297065821580063,
+    0.49884073959120423,
+    0.6547380219040401,
+    0.7484645375182603,
+    0.8314807680063298,
+    0.893254809395508,
+    0.9366869907341125,
+    0.9584012700771314
+  ],
+  "val_macro_f1": [
+    0.2907743534700937,
+    0.49283309532100333,
+    0.5555584331799135,
+    0.5491865019037594,
+    0.537415171983444,
+    0.5438010271399119,
+    0.5321310625978708,
+    0.5349257439970789
+  ],
+  "val_map": [
+    0.49905316403603495,
+    0.5884731824807826,
+    0.6089972249977647,
+    0.5985949629292393,
+    0.5977688510875707,
+    0.5854733210968868,
+    0.5822798290622361,
+    0.573190165603402
+  ],
+  "learning_rate": [
+    0.0009992320120640827,
+    0.0009810939787222386,
+    0.0009396722747031164,
+    0.0008769716004559594,
+    0.0007960265020673592,
+    0.0007007545072910938,
+    0.0005957665276106738,
+    0.0004861437023711475
+  ],
+  "epoch_seconds": [
+    18.784385500010103,
+    19.636304899933748,
+    20.1400711000897,
+    29.603429499897175,
+    28.959748199908063,
+    29.959050900069997,
+    29.397364900098182,
+    29.451915099984035
+  ],
+  "meta": {
+    "model_kind": "text_bilstm",
+    "model": {
+      "class": "BiLSTMTextClassifier",
+      "modality": "text_bilstm",
+      "num_classes": 8,
+      "parameters": {
+        "total": 4239368,
+        "trainable": 4239368,
+        "frozen": 0
+      },
+      "trainable_fraction": 1.0,
+      "frozen_pretrained": []
+    },
+    "seed": 42,
+    "device": "cpu",
+    "epochs_requested": 15,
+    "monitor": "micro_f1",
+    "monitor_mode": "max",
+    "batch_size": 64,
+    "optimizer": "AdamW",
+    "learning_rates": [
+      7.8125e-06,
+      7.8125e-06
+    ],
+    "weight_decay": 0.01,
+    "scheduler": "cosine",
+    "grad_clip_norm": 1.0,
+    "criterion": {
+      "class": "BCEWithLogitsLoss",
+      "pos_weight": null,
+      "reduction": "mean"
+    },
+    "threshold_used_during_training": 0.5,
+    "n_train_batches": 171,
+    "n_val_batches": 38,
+    "environment": {
+      "python": "3.13.12",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+      "cpu_count": 20,
+      "torch": "2.13.0+cpu",
+      "device": "cpu",
+      "torch_threads": 14,
+      "cuda_available": false,
+      "torchvision": "0.28.0+cpu",
+      "transformers": "4.57.6"
+    },
+    "model_init_kwargs": {
+      "dropout": 0.3,
+      "hidden_dims": [
+        256
+      ]
+    },
+    "text_column": "description_notitle",
+    "used_cached_features": false,
+    "augmentation": false,
+    "tag": null,
+    "cli": {
+      "epochs": 15,
+      "batch_size": 64,
+      "head_lr": 0.001,
+      "backbone_lr": 2e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "patience": 5,
+      "scheduler": "cosine",
+      "class_weighting": "none",
+      "monitor": "micro_f1",
+      "seed": 42,
+      "seeds": null,
+      "text_column": "notitle",
+      "threshold_strategy": "global",
+      "tag": null,
+      "device": "auto",
+      "max_samples": null,
+      "no_cache_features": false,
+      "force_features": false,
+      "augment": false,
+      "no_progress": true,
+      "architecture": "bilstm",
+      "unfreeze_layers": 0,
+      "head_hidden": 256
+    },
+    "epochs_run": 8,
+    "total_seconds": 205.96,
+    "early_stopping": {
+      "patience": 5,
+      "min_delta": 0.0001,
+      "mode": "max",
+      "best_score": 0.5905136702568351,
+      "best_epoch": 3,
+      "epochs_without_improvement": 5,
+      "stopped_early": true
+    }
+  }
+}

@@ -1,0 +1,4 @@
+model,n_seeds,micro_f1,micro_f1_std,macro_f1,macro_f1_std,micro_precision,micro_precision_std,micro_recall,micro_recall_std,macro_precision,macro_precision_std,macro_recall,macro_recall_std,mAP,mAP_std,micro_ap,micro_ap_std,hamming_loss,hamming_loss_std,subset_accuracy,subset_accuracy_std
+Image Only (ResNet18),3,0.5733,0.0018,0.5018,0.0018,0.4693,0.0055,0.7367,0.0108,0.4615,0.0126,0.6094,0.0092,0.5063,0.0035,0.5736,0.0043,0.2977,0.0054,0.0522,0.0071
+Text Only (DistilBERT),3,0.6568,0.0037,0.6401,0.0059,0.6240,0.0122,0.6938,0.0224,0.6531,0.0136,0.6478,0.0201,0.6875,0.0053,0.7112,0.0068,0.1968,0.0037,0.1900,0.0091
+Multimodal (ResNet18 + DistilBERT),3,0.6610,0.0021,0.6462,0.0039,0.5998,0.0067,0.7361,0.0050,0.6076,0.0126,0.7006,0.0034,0.6951,0.0030,0.7232,0.0020,0.2050,0.0033,0.1718,0.0034

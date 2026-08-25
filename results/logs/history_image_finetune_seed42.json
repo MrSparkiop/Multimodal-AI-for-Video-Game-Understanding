@@ -1,0 +1,167 @@
+{
+  "epochs": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "train_loss": [
+    0.5195679302975448,
+    0.4839023947715759,
+    0.46817229121749165,
+    0.4604133799759268
+  ],
+  "val_loss": [
+    0.48526644706726074,
+    0.47319735508216054,
+    0.47191226247109863,
+    0.4726694963480297
+  ],
+  "train_micro_f1": [
+    0.3680610871535694,
+    0.4604070640633901,
+    0.49525348414461723,
+    0.5173681856582021
+  ],
+  "val_micro_f1": [
+    0.4379980079681275,
+    0.462628236443576,
+    0.4986767920837648,
+    0.5012588693064775
+  ],
+  "train_macro_f1": [
+    0.21988944966762697,
+    0.33853156426361497,
+    0.39062538451149964,
+    0.41993643834510797
+  ],
+  "val_macro_f1": [
+    0.27666627861553617,
+    0.3491246149050683,
+    0.41204880592459747,
+    0.41906703442492704
+  ],
+  "val_map": [
+    0.49269683265193154,
+    0.5091686343048034,
+    0.5140264044362092,
+    0.5148909539687678
+  ],
+  "learning_rate": [
+    1.7886715494132008e-05,
+    1.0820723125361685e-05,
+    3.225312968616812e-06,
+    0.0
+  ],
+  "epoch_seconds": [
+    509.0674706000136,
+    445.91050279990304,
+    517.055765899946,
+    442.2527318999637
+  ],
+  "meta": {
+    "model_kind": "image_finetune",
+    "model": {
+      "class": "ImageOnlyClassifier",
+      "modality": "image",
+      "num_classes": 8,
+      "parameters": {
+        "total": 11310408,
+        "trainable": 8527624,
+        "frozen": 2782784
+      },
+      "trainable_fraction": 0.75396,
+      "frozen_pretrained": [],
+      "backbone": "resnet18",
+      "backbone_pretrained": true,
+      "embedding_dim": 512,
+      "image_size": 224
+    },
+    "seed": 42,
+    "device": "cpu",
+    "epochs_requested": 4,
+    "monitor": "micro_f1",
+    "monitor_mode": "max",
+    "batch_size": 32,
+    "optimizer": "AdamW",
+    "learning_rates": [
+      2.9411764705882356e-07,
+      2.9411764705882356e-07,
+      1.4705882352941177e-05,
+      1.4705882352941177e-05
+    ],
+    "weight_decay": 0.01,
+    "scheduler": "cosine",
+    "grad_clip_norm": 1.0,
+    "criterion": {
+      "class": "BCEWithLogitsLoss",
+      "pos_weight": null,
+      "reduction": "mean"
+    },
+    "threshold_used_during_training": 0.5,
+    "n_train_batches": 342,
+    "n_val_batches": 38,
+    "environment": {
+      "python": "3.13.12",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+      "cpu_count": 20,
+      "torch": "2.13.0+cpu",
+      "device": "cpu",
+      "torch_threads": 14,
+      "cuda_available": false,
+      "torchvision": "0.28.0+cpu",
+      "transformers": "4.57.6"
+    },
+    "model_init_kwargs": {
+      "freeze_backbone": true,
+      "unfreeze_stages": 1,
+      "pretrained": true,
+      "dropout": 0.3,
+      "hidden_dims": [
+        256
+      ]
+    },
+    "text_column": "description_notitle",
+    "used_cached_features": false,
+    "augmentation": true,
+    "tag": "finetune",
+    "cli": {
+      "epochs": 4,
+      "batch_size": 32,
+      "head_lr": 0.001,
+      "backbone_lr": 2e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "patience": 3,
+      "scheduler": "cosine",
+      "class_weighting": "none",
+      "monitor": "micro_f1",
+      "seed": 42,
+      "seeds": null,
+      "text_column": "notitle",
+      "threshold_strategy": "global",
+      "tag": "finetune",
+      "device": "auto",
+      "max_samples": null,
+      "no_cache_features": false,
+      "force_features": false,
+      "augment": true,
+      "no_progress": true,
+      "unfreeze_stages": 1,
+      "random_init": false,
+      "head_hidden": 256
+    },
+    "epochs_run": 4,
+    "total_seconds": 1914.32,
+    "early_stopping": {
+      "patience": 3,
+      "min_delta": 0.0001,
+      "mode": "max",
+      "best_score": 0.5012588693064775,
+      "best_epoch": 4,
+      "epochs_without_improvement": 0,
+      "stopped_early": false
+    }
+  }
+}

@@ -1,0 +1,10 @@
+=== LONG ABLATIONS START Sat Aug 22 10:26:05 FLEDT 2026 ===
+--- BiLSTM text baseline (end to end) ---
+bilstm exit=0
+10:29:47 | INFO    | gamesense.evaluation.evaluator | text_bilstm (seed 42): test micro-F1 0.6069 / macro-F1 0.5755 / mAP 0.6328 at threshold 0.4
+10:29:47 | INFO    | gamesense.train              |   seed 42    test micro-F1 0.6069 | macro-F1 0.5755 | mAP 0.6328 | threshold 0.4
+--- image with ResNet18 layer4 unfrozen + augmentation ---
+finetune exit=0
+11:03:51 | INFO    | gamesense.evaluation.evaluator | image_finetune (seed 42): test micro-F1 0.5772 / macro-F1 0.5137 / mAP 0.5023 at threshold 0.3
+11:03:51 | INFO    | gamesense.train              |   seed 42    test micro-F1 0.5772 | macro-F1 0.5137 | mAP 0.5023 | threshold 0.3
+=== LONG ABLATIONS DONE Sat Aug 22 11:03:52 FLEDT 2026 ===

@@ -1,0 +1,25 @@
+model,model_kind,genre,support,precision,recall,f1,average_precision,predicted_positive
+Image Only (ResNet18),image,Action,1078,0.5215,0.8998,0.6603,0.6401,1860
+Image Only (ResNet18),image,Adventure,967,0.4655,0.9152,0.6172,0.5926,1901
+Image Only (ResNet18),image,Casual,1084,0.5103,0.8708,0.6435,0.6449,1850
+Image Only (ResNet18),image,RPG,484,0.3585,0.4421,0.3959,0.3839,597
+Image Only (ResNet18),image,Racing,201,0.5137,0.3731,0.4323,0.4579,146
+Image Only (ResNet18),image,Simulation,624,0.4252,0.6058,0.4997,0.4940,889
+Image Only (ResNet18),image,Sports,210,0.5301,0.2095,0.3003,0.3332,83
+Image Only (ResNet18),image,Strategy,560,0.4292,0.4875,0.4565,0.4620,636
+Text Only (DistilBERT),text,Action,1078,0.6212,0.8442,0.7157,0.7984,1465
+Text Only (DistilBERT),text,Adventure,967,0.5851,0.8459,0.6918,0.7610,1398
+Text Only (DistilBERT),text,Casual,1084,0.6175,0.7537,0.6789,0.7372,1323
+Text Only (DistilBERT),text,RPG,484,0.6038,0.5289,0.5639,0.6080,424
+Text Only (DistilBERT),text,Racing,201,0.7442,0.6368,0.6863,0.7155,172
+Text Only (DistilBERT),text,Simulation,624,0.6102,0.5369,0.5712,0.6527,549
+Text Only (DistilBERT),text,Sports,210,0.6897,0.4762,0.5634,0.6783,145
+Text Only (DistilBERT),text,Strategy,560,0.6606,0.3857,0.4870,0.6169,327
+Multimodal (ResNet18 + DistilBERT),multimodal,Action,1078,0.6517,0.8646,0.7432,0.8092,1430
+Multimodal (ResNet18 + DistilBERT),multimodal,Adventure,967,0.6520,0.7942,0.7161,0.7639,1178
+Multimodal (ResNet18 + DistilBERT),multimodal,Casual,1084,0.5651,0.8810,0.6885,0.7458,1690
+Multimodal (ResNet18 + DistilBERT),multimodal,RPG,484,0.5922,0.5041,0.5446,0.6252,412
+Multimodal (ResNet18 + DistilBERT),multimodal,Racing,201,0.6429,0.7164,0.6776,0.7417,224
+Multimodal (ResNet18 + DistilBERT),multimodal,Simulation,624,0.6291,0.6442,0.6366,0.6836,639
+Multimodal (ResNet18 + DistilBERT),multimodal,Sports,210,0.6129,0.6333,0.6230,0.6684,217
+Multimodal (ResNet18 + DistilBERT),multimodal,Strategy,560,0.6401,0.5018,0.5626,0.6513,439

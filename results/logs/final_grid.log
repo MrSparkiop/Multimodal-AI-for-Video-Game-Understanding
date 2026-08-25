@@ -1,0 +1,32 @@
+=== FINAL GRID START Sat Aug 22 09:59:57 FLEDT 2026 ===
+--- headline: image (plain BCE, seeds 42 123 2026) ---
+image exit=0
+10:05:37 | INFO    | gamesense.train              |   micro_f1  mean 0.5747 +- 0.0005 (n=3)
+10:05:37 | INFO    | gamesense.train              |   macro_f1  mean 0.5023 +- 0.0034 (n=3)
+10:05:37 | INFO    | gamesense.train              |   mAP       mean 0.5007 +- 0.0019 (n=3)
+--- headline: text (plain BCE, seeds 42 123 2026) ---
+text exit=0
+10:10:48 | INFO    | gamesense.train              |   micro_f1  mean 0.6547 +- 0.0040 (n=3)
+10:10:48 | INFO    | gamesense.train              |   macro_f1  mean 0.6288 +- 0.0092 (n=3)
+10:10:48 | INFO    | gamesense.train              |   mAP       mean 0.6956 +- 0.0053 (n=3)
+--- headline: multimodal (plain BCE, seeds 42 123 2026) ---
+multimodal exit=0
+10:17:39 | INFO    | gamesense.train              |   micro_f1  mean 0.6676 +- 0.0066 (n=3)
+10:17:39 | INFO    | gamesense.train              |   macro_f1  mean 0.6472 +- 0.0034 (n=3)
+10:17:39 | INFO    | gamesense.train              |   mAP       mean 0.7071 +- 0.0035 (n=3)
+--- ablation: image with pos_weight (seeds 42 123 2026) ---
+image_posw exit=0
+10:18:44 | INFO    | gamesense.train              |   micro_f1  mean 0.5379 +- 0.0087 (n=3)
+10:18:44 | INFO    | gamesense.train              |   macro_f1  mean 0.4921 +- 0.0079 (n=3)
+10:18:44 | INFO    | gamesense.train              |   mAP       mean 0.4849 +- 0.0051 (n=3)
+--- ablation: text with pos_weight (seeds 42 123 2026) ---
+text_posw exit=0
+10:20:16 | INFO    | gamesense.train              |   micro_f1  mean 0.6426 +- 0.0103 (n=3)
+10:20:16 | INFO    | gamesense.train              |   macro_f1  mean 0.6194 +- 0.0119 (n=3)
+10:20:16 | INFO    | gamesense.train              |   mAP       mean 0.6836 +- 0.0138 (n=3)
+--- ablation: multimodal with pos_weight (seeds 42 123 2026) ---
+multimodal_posw exit=0
+10:23:13 | INFO    | gamesense.train              |   micro_f1  mean 0.6539 +- 0.0063 (n=3)
+10:23:13 | INFO    | gamesense.train              |   macro_f1  mean 0.6288 +- 0.0150 (n=3)
+10:23:13 | INFO    | gamesense.train              |   mAP       mean 0.6992 +- 0.0117 (n=3)
+=== FINAL GRID DONE Sat Aug 22 10:23:13 FLEDT 2026 ===
